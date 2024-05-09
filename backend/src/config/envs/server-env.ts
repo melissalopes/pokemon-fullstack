@@ -1,3 +1,3 @@
 export class ServerEnvs {
-  static readonly PORT = process.env.PORT;
+    static readonly PORT = process.env.PORT;
 }
