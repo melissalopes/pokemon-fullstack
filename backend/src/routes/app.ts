@@ -3,7 +3,6 @@ dotenv.config();
 import * as express from 'express';
 const app = express();
 import cors from 'cors';
-import { ServerEnvs } from '../config/envs';
 import { DatabaseConfig } from '../config/database';
 
 (() => {
@@ -19,8 +18,6 @@ import { DatabaseConfig } from '../config/database';
 
   const dataBaseConfig = new DatabaseConfig();
   dataBaseConfig.connect();
-
-  app.listen(ServerEnvs.PORT, () => console.log('Server online'));
 })()
 
 export default app;
