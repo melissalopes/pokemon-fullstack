@@ -42,10 +42,12 @@ docker-compose up -d
 npm run test
 ```
 
-1. Lint
+2. Lint
 ```bash
 npm run lint
 ```
+
+3. Run local server in Docker, just accessing 'api.http' file in root of backend project (You will need 'REST Client' extension installed on your VSCode)
 
 ## Frontend
 
