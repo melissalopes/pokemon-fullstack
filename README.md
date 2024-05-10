@@ -11,7 +11,7 @@ git clone https://github.com/melissalopes/pokemon-fullstack.git
 
 1. Make .env.example into .env
 
-###
+### Config
 
 1. Go to the API folder
 
@@ -53,7 +53,7 @@ npm run lint
 
 1. Make .env.example into .env
 
-###
+### Config
 
 1. Go to the project folder
 ```bash
@@ -79,7 +79,7 @@ http://localhost:3000/
 ## Q&A 
 
 1. "Why is Database there if it is not used?"
-Just to demonstrate how to set up a Database. In the future the code can be updated and receive Models
+- Just to demonstrate how to set up a Database. In the future the code can be updated and receive Models
 
 2. "Which main technologies were used in this project?"
 
