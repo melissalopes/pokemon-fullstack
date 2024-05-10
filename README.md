@@ -108,3 +108,4 @@ Frontend:
 - Axios
 - Context
 - React Hook Form
+- React Toastify

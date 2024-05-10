@@ -6,6 +6,4 @@ export interface IFilterContextProvides {
 
   pokemon: IPokemon | undefined;
   setPokemon: React.Dispatch<React.SetStateAction<IPokemon | undefined>>;
-
-  fetchData: (param?: any, param2?: any) => void | undefined;
 }
