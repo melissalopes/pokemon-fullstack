@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
 import { useFilter } from "@/hooks/useFilter";
 import { NoContentTd, NoContentTr, TableContainer } from "./styles";
 
-export function Table(){
+export function Table() {
   const { pokemon } = useFilter();
 
   return (
@@ -15,7 +15,8 @@ export function Table(){
           </tr>
         </thead>
         <tbody>
-          {Array.isArray(pokemon?.abilities) && pokemon?.abilities.length > 0 ? (
+          {Array.isArray(pokemon?.abilities) &&
+          pokemon?.abilities.length > 0 ? (
             pokemon?.abilities.map((item) => (
               <tr key={null}>
                 <td>{item.name}</td>

@@ -8,5 +8,5 @@ export interface IPokemon {
 }
 
 export interface IPokemonResponse {
-  response: IPokemon
+  response: IPokemon;
 }
