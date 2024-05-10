@@ -1,7 +1,7 @@
 "use client";
 
 import { useFilter } from "@/hooks/useFilter";
-import { NoContentTd, NoContentTr, TableContainer } from "./styles";
+import { JsonTd, JsonText, NoContentTd, NoContentTr, TableContainer } from "./styles";
 
 export function Table() {
   const { pokemon } = useFilter();
@@ -11,15 +11,17 @@ export function Table() {
       <TableContainer>
         <thead>
           <tr>
-            <th>Habilidades</th>
+            <th>JSON de Habilidades</th>
           </tr>
         </thead>
         <tbody>
           {Array.isArray(pokemon?.abilities) &&
           pokemon?.abilities.length > 0 ? (
-            pokemon?.abilities.map((item) => (
-              <tr key={null}>
-                <td>{item.name}</td>
+            pokemon?.abilities.map((item, index) => (
+              <tr key={index}>
+                <JsonTd>
+                  <JsonText>{JSON.stringify(item, null, 2)}</JsonText>
+                </JsonTd>
               </tr>
             ))
           ) : (

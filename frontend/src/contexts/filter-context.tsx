@@ -29,7 +29,7 @@ export function FilterContextProvider({ children }: ProviderProps) {
           .get(`${ApiEnvs.API_URL}${search}`)
           .then((res) => {
             if (res.status === 200) {
-              setPokemon(res.data.reponse);
+              setPokemon(res.data.response);
               toast.success("Habilidades encontradas! :)", { autoClose: 2000 });
             }
           })
