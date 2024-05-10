@@ -7,7 +7,7 @@
         "build": "tsc",
         "start": "node ./dist/src/index.js",
         "dev": "nodemon ./src/index.ts",
-        "jest": "jest --coverage",
+        "jest": "jest --forceExit",
         "test": "npm run jest",
         "lint": "eslint .",
         "prepare": "husky"
