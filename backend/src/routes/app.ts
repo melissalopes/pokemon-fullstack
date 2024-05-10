@@ -2,7 +2,7 @@ import * as dotenv from 'dotenv';
 dotenv.config();
 import * as express from 'express';
 const app = express();
-import cors from 'cors';
+import * as cors from 'cors';
 import { DatabaseConfig } from '../config/database';
 import pokemonRouter from './pokemon-router';
 
@@ -11,7 +11,7 @@ import pokemonRouter from './pokemon-router';
 
     app.use(
         cors({
-            origin: 'http://localhost:3000',
+            origin: 'http://localhost:4000',
             credentials: true,
             optionSuccessStatus: 200,
         })
