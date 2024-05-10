@@ -1,8 +1,12 @@
-import styles from "./page.module.css";
+import { Provider } from "@/client-provider";
+import { Table } from "@/components/table/table";
 
 export default function Home() {
   return (
-    <main>
-    </main>
+    <Provider>
+      <main>
+        <Table/>
+      </main>
+    </Provider>
   );
 }
