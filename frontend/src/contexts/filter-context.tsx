@@ -41,7 +41,7 @@ export function FilterContextProvider({ children }: ProviderProps) {
           });
       })();
     } catch (error) {
-      console.error(error, { action: fetchData });
+      console.error(error, { action: "fetchData" });
     }
   }
 
@@ -53,8 +53,7 @@ export function FilterContextProvider({ children }: ProviderProps) {
     search,
     setSearch,
     pokemon,
-    setPokemon,
-    fetchData,
+    setPokemon
   };
 
   return (
