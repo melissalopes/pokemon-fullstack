@@ -10,13 +10,15 @@ export function Table(){
   return (
       <div>
         <TableContainer>
-          {vazio ? (
-            <div>{vazio}</div>
-          ) : (
-            <NoContentTr>
-              <NoContentTd colSpan={5}>Não há nada aqui!</NoContentTd>
-            </NoContentTr>
-          )}
+          <tbody>
+            {vazio ? (
+              <div>{vazio}</div>
+            ) : (
+              <NoContentTr>
+                <NoContentTd colSpan={5}>Não há nada aqui!</NoContentTd>
+              </NoContentTr>
+            )}
+          </tbody>
         </TableContainer>
       </div>
   )
