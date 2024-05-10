@@ -19,14 +19,14 @@ export function FormSearch(){
     const { setSearch } = useFilter();
 
     async function handleGet (data: FormProps) {
-        setSearch(data.search);
+        setSearch(data.search.toLowerCase());
 
         reset();
     };
 
     return (
       <>
-        {errors.search && console.log('>>>>>', errors.search.message)}
+        {errors.search && console.error(errors.search.message)}
         <FormContainer onSubmit={handleSubmit(handleGet)}>
           <PrimaryInput {...register("search")} placeholder="Pesquise um Pokémon"/>
           <SearchIcon/>
