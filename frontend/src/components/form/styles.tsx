@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const PrimaryInput = styled.input`
-  width: 200px; /* Largura do input */
+  width: 200px;
   border-radius: 8px;
   border: none;
   padding: 10px 16px;
@@ -13,7 +13,6 @@ export const PrimaryInput = styled.input`
   color: var(--text-dark);
 
   ::placeholder {
-    /* Estilo do placeholder */
     color: var(--placeholder-color);
   }
 `;

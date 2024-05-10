@@ -16,15 +16,10 @@ export function FormSearch(){
         reValidateMode: 'onChange',
         resolver: zodResolver(SearchSchema),
       });
-    const { setSearch, fetchData, search } = useFilter();
+    const { setSearch } = useFilter();
 
     async function handleGet (data: FormProps) {
-      console.log('>>>>', data);
         setSearch(data.search);
-
-        console.log('>>>>', search)
-
-        await fetchData();
 
         reset();
     };

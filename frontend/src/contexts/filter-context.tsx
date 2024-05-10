@@ -18,6 +18,9 @@ export function FilterContextProvider({ children }: ProviderProps){
 
     async function fetchData () {
         try {
+            if (search.trim() === "") {
+                return;
+            }
             const response = await axios.get(`${API_URL}${search}`);
             setPokemon(response.data.reponse);
         } catch (error) {
@@ -27,7 +30,7 @@ export function FilterContextProvider({ children }: ProviderProps){
 
     useEffect(() => {
         fetchData();
-    }, []);
+    }, [search]);
 
     const provider = {
         search,
