@@ -4,6 +4,7 @@ import * as express from 'express';
 const app = express();
 import cors from 'cors';
 import { DatabaseConfig } from '../config/database';
+import pokemonRouter from './pokemon-router';
 
 (() => {
     app.use(express.json());
@@ -18,6 +19,8 @@ import { DatabaseConfig } from '../config/database';
 
     const dataBaseConfig = new DatabaseConfig();
     dataBaseConfig.connect();
+
+    app.use('/api', pokemonRouter)
 })();
 
 export default app;
